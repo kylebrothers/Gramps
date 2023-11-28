@@ -48,40 +48,40 @@ volumes:
       type: "cifs"
       device: "//192.168.0.134/1.5TBShare/Docker/Gramps/gramps_index"
       #o: "addr=192.168.0.134,rw"
-      o: "uid=0,username=samba-username,password=samba-password,file_mode=0770,d"
+      o: "username=youruser,password=yourpassword,uid=1021,gid=100,vers=3.0"
   gramps_thumb_cache:
     driver_opts:
       type: "cifs"
       device: "//192.168.0.134/1.5TBShare/Docker/Gramps/gramps_thumb_cache"
       #o: "addr=192.168.0.134,rw"
-      o: "uid=0,username=samba-username,password=samba-password,file_mode=0770,d"
+      o: "username=youruser,password=yourpassword,uid=1021,gid=100,vers=3.0"
   gramps_cache:
     driver_opts:
       type: "cifs"
       device: "//192.168.0.134/1.5TBShare/Docker/Gramps/gramps_cache"
       #o: "addr=192.168.0.134,rw"
-      o: "uid=0,username=samba-username,password=samba-password,file_mode=0770,d"
+      o: "username=youruser,password=yourpassword,uid=1021,gid=100,vers=3.0"
   gramps_secret:
     driver_opts:
       type: "cifs"
       device: "//192.168.0.134/1.5TBShare/Docker/Gramps/gramps_secret"
       #o: "addr=192.168.0.134,rw"
-      o: "uid=0,username=samba-username,password=samba-password,file_mode=0770,d"
+      o: "username=youruser,password=yourpassword,uid=1021,gid=100,vers=3.0"
   gramps_db:
     driver_opts:
       type: "cifs"
       device: "//192.168.0.134/1.5TBShare/Docker/Gramps/gramps_db"
       #o: "addr=192.168.0.134,rw"
-      o: "uid=0,username=samba-username,password=samba-password,file_mode=0770,d"
+      o: "username=youruser,password=yourpassword,uid=1021,gid=100,vers=3.0"
   gramps_media:
     driver_opts:
       type: "cifs"
       device: "//192.168.0.134/1.5TBShare/Docker/Gramps/gramps_media"
       #o: "addr=192.168.0.134,rw"
-      o: "uid=0,username=samba-username,password=samba-password,file_mode=0770,d"
+      o: "username=youruser,password=yourpassword,uid=1021,gid=100,vers=3.0"
   gramps_tmp:
     driver_opts:
       type: "cifs"
       device: "//192.168.0.134/1.5TBShare/Docker/Gramps/gramps_tmp"
       #o: "addr=192.168.0.134,rw"
-      o: "uid=0,username=samba-username,password=samba-password,file_mode=0770,d"
+      o: "username=youruser,password=yourpassword,uid=1021,gid=100,vers=3.0"
