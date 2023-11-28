@@ -42,7 +42,7 @@ volumes:
       type: "cifs"
       device: "//192.168.0.134/1.5TBShare/Docker/Gramps/gramps_users"
       #o: "addr=192.168.0.134,rw"
-      o: "uid=0,username=samba-username,password=samba-password,file_mode=0770,d"
+      o: "username=youruser,password=yourpassword,uid=1021,gid=100,vers=3.0"
   gramps_index:
     driver_opts:
       type: "cifs"
