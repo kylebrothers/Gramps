@@ -41,7 +41,7 @@ volumes:
     driver_opts:
       type: cifs
       device: //192.168.0.134/1.5TBShare/Docker/Gramps/gramps_users
-      o: username=youruser,password=yourpassword,vers=3.02
+      o: username=youruser,password=yourpassword,vers=3.0,rw
   gramps_index:
   gramps_thumb_cache:
   gramps_cache:
