@@ -43,10 +43,30 @@ volumes:
       device: ":/Docker/Gramps/gramps_users"
       o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_index:
+    driver_opts:
+      type: nfs
+      device: ":/Docker/Gramps/gramps_index"
+      o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_thumb_cache:
+    driver_opts:
+      type: nfs
+      device: ":/Docker/Gramps/gramps_thumb_cache"
+      o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_cache:
+    driver_opts:
+      type: nfs
+      device: ":/Docker/Gramps/gramps_cache"
+      o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_secret:
+    driver_opts:
+      type: nfs
+      device: ":/Docker/Gramps/gramps_secret"
+      o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_db:
+    driver_opts:
+      type: nfs
+      device: ":/Docker/Gramps/gramps_db"
+      o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_media:
     driver_opts:
       type: nfs
