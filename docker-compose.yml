@@ -38,6 +38,10 @@ services:
 
 volumes:
   gramps_users:
+    driver_opts:
+      type: nfs
+      device: ":/Docker/Gramps/gramps_users"
+      o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_index:
   gramps_thumb_cache:
   gramps_cache:
