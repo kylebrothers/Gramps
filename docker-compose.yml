@@ -45,7 +45,7 @@ volumes:
   gramps_db:
   gramps_media:
     driver_opts:
-      type: cifs
-      device: //192.168.0.134/1.5TBShare/Docker/Gramps/gramps_media
-      o: username=youruser,password=yourpassword,vers=3.0,rw
+      type: nfs
+      device: //192.168.0.134/Docker/Gramps/gramps_media
+      o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_tmp:
