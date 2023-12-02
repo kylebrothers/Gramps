@@ -46,6 +46,6 @@ volumes:
   gramps_media:
     driver_opts:
       type: nfs
-      device: //192.168.0.134/Docker/Gramps/gramps_media
+      device: ":/Docker/Gramps/gramps_media"
       o: nfsvers=4,addr=192.168.0.134,nolock,soft,rw
   gramps_tmp:
